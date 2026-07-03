@@ -15,7 +15,7 @@ export default function Home() {
   }, []);
 
   // Add to cart (safe + synced)
-  function addToCart(product) {
+  function addToCart(product: any) {
     const stored = localStorage.getItem("cart");
     const currentCart = stored ? JSON.parse(stored) : [];
 
