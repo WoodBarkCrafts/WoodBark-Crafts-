@@ -4,8 +4,7 @@ import { useState, useEffect } from "react";
 import { products } from "./data/products";
 
 export default function Home() {
-  const [cart, setCart] = useState([]);
-
+  const [cart, setCart] = useState<any[]>([]);
   // Load cart on page load
   useEffect(() => {
     const stored = localStorage.getItem("cart");
