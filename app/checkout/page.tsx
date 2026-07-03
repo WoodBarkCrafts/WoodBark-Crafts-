@@ -3,8 +3,7 @@
 import { useEffect, useState } from "react";
 
 export default function CheckoutPage() {
-  const [cart, setCart] = useState([]);
-
+const [cart, setCart] = useState<any[]>([]);
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem("cart") || "[]");
     setCart(stored);

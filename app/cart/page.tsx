@@ -3,8 +3,7 @@
 import { useState, useEffect } from "react";
 
 export default function CartPage() {
-  const [cart, setCart] = useState([]);
-
+const [cart, setCart] = useState<any[]>([]);
   useEffect(() => {
     const storedCart = localStorage.getItem("cart");
 
